@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpringButton(Start) : MonoBehaviour
+public class SpringButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
