@@ -8,7 +8,7 @@ public class SpringButton : MonoBehaviour
 {
     public float speed = 5;
     public Rigidbody2D rb2d;
-    public float strength =80f;
+    public float strength =100f;
 
     private void Start()
     {
@@ -16,10 +16,9 @@ public class SpringButton : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Move();
-        Force();
     }
 
     void Move()
@@ -30,10 +29,5 @@ public class SpringButton : MonoBehaviour
             Vector2 force = Vector2.down * strength;
             rb2d.AddForce(force);
         }
-    }
-
-    void Force()
-    {
-        
     }
 }
