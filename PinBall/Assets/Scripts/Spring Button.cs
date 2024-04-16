@@ -7,6 +7,8 @@ public class SpringButton : MonoBehaviour
 
 {
     public float speed = 5;
+    public Ridgidbody2D rb2d;
+    public float strength;
 
     private void Start()
     {
@@ -17,6 +19,7 @@ public class SpringButton : MonoBehaviour
     void Update()
     {
         Move();
+        Force();
     }
 
     void Move()
@@ -30,6 +33,12 @@ public class SpringButton : MonoBehaviour
             offset.y -= speed;
         }
 
-        transform.position = offset * Time.deltaTime;
+        transform.position += offset * Time.deltaTime;
+    }
+
+    void Force()
+    {
+        rb2d.AddForce(Vector2);
+        Vector2.down* strength;
     }
 }

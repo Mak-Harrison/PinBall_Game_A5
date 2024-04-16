@@ -16,6 +16,11 @@ public class Player : MonoBehaviour
         Vector3 offset = Vector3.zero;
 
         bool isHoldingLeft = Input.GetKeyDown(KeyCode.LeftArrow);
+
+        if (isHoldingLeft)
+        {
+
+        }
         bool isHoldingRight = Input.GetKeyDown(KeyCode.RightArrow);
 
 
