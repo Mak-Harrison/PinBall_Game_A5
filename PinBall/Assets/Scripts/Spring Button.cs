@@ -8,7 +8,7 @@ public class SpringButton : MonoBehaviour
 {
     public float speed = 5;
     public Rigidbody2D rb2d;
-    public float strength =100f;
+    public float strength =1000f;
 
     private void Start()
     {
