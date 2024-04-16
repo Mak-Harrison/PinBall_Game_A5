@@ -21,6 +21,15 @@ public class SpringButton : MonoBehaviour
 
     void Move()
     {
-        
+        Vector3 offset = Vector3.zero;
+
+        bool isPressed = Input.GetKey(KeyCode.Space);
+
+        if (isPressed)
+        {
+            offset.y -= speed;
+        }
+
+        transform.position = offset * Time.deltaTime;
     }
 }
