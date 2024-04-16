@@ -7,8 +7,8 @@ public class SpringButton : MonoBehaviour
 
 {
     public float speed = 5;
-    public Ridgidbody2D rb2d;
-    public float strength;
+    public Rigidbody2D rb2d;
+    public float strength =10f;
 
     private void Start()
     {
@@ -24,21 +24,16 @@ public class SpringButton : MonoBehaviour
 
     void Move()
     {
-        Vector3 offset = Vector3.zero;
-
         bool isPressed = Input.GetKey(KeyCode.Space);
-
         if (isPressed)
         {
-            offset.y -= speed;
+            Vector2 force = Vector2.down * strength;
+            rb2d.AddForce(force);
         }
-
-        transform.position += offset * Time.deltaTime;
     }
 
     void Force()
     {
-        rb2d.AddForce(Vector2);
-        Vector2.down* strength;
+        
     }
 }
