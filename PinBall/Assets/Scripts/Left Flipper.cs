@@ -4,23 +4,16 @@ using UnityEngine;
 
 public class LeftFlipper : MonoBehaviour
 {
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) == true) on(); else off();
-    }
-    void on()
-    {
-        
-    }
+    public Rigidbody2D lf;
 
-    void off()
-    {
-        
+    void OnCollisionEnter(Collision2D Collision)
+    { 
+        if (Input.GetKeyDown(KeyCode.LeftArrow)
+        {
+
+        }
     }
-    void Start()
-    {
-        off();
-    }
+   
     //void 
     //Vector3 offset = Vector3.zero;
 
