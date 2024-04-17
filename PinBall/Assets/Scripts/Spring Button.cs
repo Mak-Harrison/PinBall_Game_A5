@@ -21,6 +21,7 @@ public class SpringButton : MonoBehaviour
         Move();
     }
 
+    //Code for the spring button to eject ball into play
     void Move()
     {
         bool isPressed = Input.GetKey(KeyCode.Space);
