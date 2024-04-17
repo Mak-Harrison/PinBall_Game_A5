@@ -5,6 +5,7 @@ using UnityEngine;
 public class LeftFlipper : MonoBehaviour
 {
     public Rigidbody2D lf;
+    public HingeJoint2D;
 
     void OnCollisionEnter(Collision2D Collision)
     {
