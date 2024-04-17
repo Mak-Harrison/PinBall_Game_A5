@@ -7,10 +7,10 @@ public class LeftFlipper : MonoBehaviour
     public Rigidbody2D lf;
 
     void OnCollisionEnter(Collision2D Collision)
-    { 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-
+            gameObject.GetComponent(HingeJoint2D).useMotor = true;
         }
     }
    
