@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
+    //Code originally for player to use flippers
     void Update()
     {
         Vector3 offset = Vector3.zero;
